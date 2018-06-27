@@ -10,3 +10,5 @@ export const nonEmpty = value =>
 // $ Matches the end of the text
 export const email = value =>
     /^\S+@\S+$/.test(value) ? undefined : 'Must be a valid email address';
+export const fiveCharacters = value => value.length === 5 ? undefined : 'The tracking number must be 5 characters long';
+export const isANumber = value => parseInt(value) !== NaN ? undefined : 'The tracking number is all numbers';

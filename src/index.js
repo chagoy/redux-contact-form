@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import './index.css';
 import store from './store';
-import ContactForm from './components/contact-form';
+import DeliveryForm from './components/delivery-form';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
-        <ContactForm />
+        <DeliveryForm />
     </Provider>,
     document.getElementById('root')
 );
